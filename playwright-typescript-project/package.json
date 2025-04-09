@@ -1,0 +1,23 @@
+{
+  "name": "playwright-typescript-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.51.1",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "loglevel": "^1.9.2",
+    "playwright": "^1.51.1",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0"
+  }
+}

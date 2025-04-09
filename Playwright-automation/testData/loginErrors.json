@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Valid Email and Password",
+    "email": "sasi.sasitharan12@gmail.com",
+    "password": "sasi123@#",
+    "expectedError": ""
+  },
+  {
+    "name": "Invalid Email and Password",
+    "email": "invalid@example.com",
+    "password": "wrongpassword45435",
+    "expectedError": "Invalid credentials"
+  },
+  {
+    "name": "Malformed Email Format",
+    "email": "userwithoutemail.com",
+    "password": "12345678*--",
+    "expectedError": "Invalid email format"
+  },
+  {
+    "name": "Empty Email",
+    "email": " ",
+    "password": "password123",
+    "expectedError": "Email cannot be empty"
+  },
+  {
+    "name": "Valid Email, Wrong Password",
+    "email": "sasi.sasitharan12@gmail.com",
+    "password": "wrongpassword",
+    "expectedError": "Invalid credentials"
+  },
+  {
+    "name": "Empty Username and Password",
+    "email": " ",
+    "password": " ",
+    "expectedError": "Fields cannot be empty"
+  }
+]

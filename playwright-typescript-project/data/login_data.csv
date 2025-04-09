@@ -1,0 +1,5 @@
+﻿url,username_locator_type,username_locator_value,password_locator_type,password_locator_value,submit_button_locator_type,submit_button_locator_value,username_value,password_value,expected_result,login not successful
+https://test.az-lead.com/login,id,email,id,password,xpath,/html/body/div/main/article/div/section/div/div[2]/form/div[3]/button,sasi.sasitharan12@gmail.com,sasi123@#,login successful,login not successful
+https://www.saucedemo.com/v1/,id,user-name,id,password,id,login-button,standard_user,secret_sauce,login successful,login not successful
+https://test.az-lead.com/login,id,email,id,password,xpath,/html/body/div/main/article/div/section/div/div[2]/form/div[3]/button,,,login not successful,login not successful
+https://the-internet.herokuapp.com/login,id,username,id,password,xpath,"//*[@id=""login""]/button",tomsmith,SuperSecretPassword!,login successful,login not successful

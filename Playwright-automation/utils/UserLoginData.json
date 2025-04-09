@@ -1,0 +1,36 @@
+{
+    "standard_user": {
+      "email": "sasi.sasitharan12@gmail.com",
+      "password": "sasi123@#",
+      "firstName": "sasi",
+      "lastName": "tharan"
+    },
+    "invalid_logins": [
+      {
+        "email": "invalid@example.com",
+        "password": "wrongpassword",
+        "expectedError": "Invalid credentials"
+      },
+      {
+        "email": "userwithoutemail.com",
+        "password": "12345678",
+        "expectedError": "Invalid email format"
+      },
+      {
+        "email": " ",
+        "password": "password123",
+        "expectedError": "Email cannot be empty"
+      },
+      {
+        "email": "sasi.sasitharan12@gmail.com",
+        "password": "wrongpassword",
+        "expectedError": "Invalid credentials"
+      },
+      {
+        "email": " ",
+        "password": " ",
+        "expectedError": "Fields cannot be empty"
+      }
+    ]
+  }
+  

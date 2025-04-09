@@ -1,0 +1,37 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+  "test:ui:dev": "cross-env NODE_ENV=dev npx playwright test --project=UITests",
+  "test:api:dev": "cross-env NODE_ENV=dev npx playwright test --project=APITests",
+  "test:ui:test": "cross-env NODE_ENV=test npx playwright test --project=UITests",
+  "test:api:test": "cross-env NODE_ENV=test npx playwright test --project=APITests",
+  "test:ui:uat": "cross-env NODE_ENV=uat npx playwright test --project=UITests",
+  "test:api:uat": "cross-env NODE_ENV=uat npx playwright test --project=APITests",
+  "test:ui": "cross-env NODE_ENV=dev npx playwright test --project=UITests --headed",
+  "test:api": "cross-env NODE_ENV=dev npx playwright test --project=APITests --headed",
+  "test:iphone14": "cross-env NODE_ENV=dev npx playwright test --project=UITestsIphone14 --headed",
+  "test:pixel7": "cross-env NODE_ENV=dev npx playwright test --project=UITestsPixel7 --headed",
+  "test:iphone12": "cross-env NODE_ENV=dev npx playwright test --project=UITestsMobileSafari --headed",
+  "devMode": "npx playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.14.0",
+    "allure-playwright": "^3.2.1",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.8.3"
+  }
+}
