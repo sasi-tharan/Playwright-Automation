@@ -1,0 +1,6 @@
+Clone the project
+npm install
+Create .env file and add this      - API_BASE_URL=https://dummyjson.com , UI_BASE_URL=https://thinking-tester-contact-list.herokuapp.com/
+npx playwright test --project=chromium
+npm install -g allure-commandline --save-dev
+npm run test:ui
